@@ -42,7 +42,7 @@ def is_palindrome(word):
     return word[0] == word[-1] and is_palindrome(word[1:-1])
 
 
-def quicksort(numbers):
+def quicksort(numbers: list[int]) -> list[int]:
     if len(numbers) <= 1:
         return numbers
     pivot = median([numbers[0], numbers[len(numbers) // 2], numbers[-1]])
